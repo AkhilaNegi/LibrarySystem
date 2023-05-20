@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>LibrarySystem</title>
+<link rel="stylesheet" href="main.css">
+
+	
+
+<script type="text/javascript">
+	
+function emptyField(x) {
+    var field = document.getElementById(x);
+    
+    if(field.value !== ""){
+        field.style.backgroundColor = "white";
+    }
+    else {
+        field.style.backgroundColor = "lightblue";
+    }}
+
+</script>
+     
+    </head>
+    <body>
+        <header>
+            <nav><a href="#Books">Books</a>
+                <a href="#Register">Register</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Logout</a>
+                <h3 class="liblogo">Library System</h3>
+            </nav>
+           
+        </header>
+        <main>
+            <section id="Books" class="section">
+                <div class="first-div">
+                <h4 class="div-title">Books</h4>
+                <table class="div-table">
+                    <thead class="thead-class">
+                  <tr>
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Availability</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td class="titleClass"><span class="title"> Himalaya</span><table class="insideTable">
+                      <tr><td>Publication Date: 2023</td></tr>
+                      <tr><td>Page Count:10</td></tr>
+                      <tr><td>ISBN :611-1567890123</td></tr>
+                    </table>
+                    </td>
+                    
+                    <td>Rahul K</td>
+                    <td>Historical</td>
+                    <td>Available</td>
+                  </tr>
+                  <tr><td>2</td>
+                    <td class="titleClass"><span class="title">India</span><table class="insideTable">
+                        
+                        <tr><td>Publication Date: 2022</td></tr>
+                        <tr><td>Page Count:60</td></tr>
+                        <tr><td>ISBN :555-4567890123</td></tr>
+                      </table>
+                      </td>
+                    <td>Ankit Negi</td>
+                    <td>Historical</td>
+                    <td>Available</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td class="titleClass"><span class="title">Doll in a house</span><table class="insideTable">
+                        <tr><td>Publication Date: 1994</td></tr>
+                        <tr><td>Page Count:250</td></tr>
+                        <tr><td>ISBN :900-4567890123</td></tr>
+                      </table>
+                      </td>
+                    <td>Tansiha</td>
+                    <td>Fantasy</td>
+                    <td>Available</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td class="titleClass"><span class="title">Candies</span><table class="insideTable">
+                        <tr><td>Publication Date: 1998</td></tr>
+                        <tr><td>Page Count:50</td></tr>
+                        <tr><td>ISBN :900-4567890123</td></tr>
+                      </table>
+                      </td>
+                    <td> Akki</td>
+                    <td>Fantasy</td>
+                    <td>Available</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td class="titleClass"><span class="title">States </span><table class="insideTable">
+                        <tr><td>Publication Date: 2023</td></tr>
+                        <tr><td>Page Count:60</td></tr>
+                        <tr><td>ISBN :888-4567890123</td></tr>
+                      </table>
+                      </td>
+                    <td>Harley</td>
+                    <td>Horror</td>
+                    <td>Available</td>
+                  </tr>
+                </tbody>
+                </table>
+                </div>
+            </section>
+            <section id="Register" class="section">
+                <div class="signup">
+                  
+                <h3 class="signupheading" >Register</h3>
+                <form class="formClass">
+                <label for="name">First Name:</label><br>
+                 <input type="text" name="name" id="name" required onblur="emptyField('name')"><br><br>
+                 <label for="lname">Last Name:</label>
+                 <input type="text" name="lname" id="lname" required onblur="emptyField('lname')"><br><br>
+      
+                 <label for="DOB">Date Of Birth:</label><br>
+                 <input type="date" name="dob" id="DOB" required><br><br>
+                 <label for="age">Age:</label><br>
+                 <input type="number" name="age" id="age"min ="5" max="100" required><br><br>
+                 <label for="email">Email:</label><br>
+                 <input type="email" name="email" id="email" required onblur="emptyField('email')"><br><br>
+                 <label for="password">Password:</label><br>
+                 <input type="password" name="name" id="password" required><br><br>
+                 <label for="comp">Confirm Password:</label><br>
+                 <input type="password" name="cpassword" id="comp" required><br><br>
+                 <input type="submit" value="Register">
+                </form>
+                </div>
+            </section>
+        </main>
+    </body>
+       
+
+</html>
